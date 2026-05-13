@@ -1,0 +1,198 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+:root {
+ --DefaultTextFontFamily: 'Montserrat', sans-serif;
+ --DefaultTechnicalFontFamily: 'Play', sans-serif;
+ --ButtonFontFamily: 'Play', sans-serif;
+ --DefaultTinyFontSize: 0.9rem;
+ --BodyWrapperBackground: #0000002e;
+ --PrimaryNavBackgroundColor: #0000;
+ --PrimaryNavHeight: 80px;
+ --SecondaryNavBackgroundColor: #1a1a1a;
+ --InputHoverBackgroundColor: #222;
+ --InputBackgroundColor: #151515bf;
+ --LinkColor: #c3c3c3;
+ --LinkHoverColor: #fff;
+ --DefaultTextColor: #fff;
+ --TabBackground: #141516;
+ --FixedMainContentHeaderBackground: #0000;
+ --NotificationUnseenBG: #171717;
+ --NotificationUnseenDividerColor: #040404;
+ --SubNavigatorBorderColor: #2b2b2b;
+ --InputFocusBackgroundColor: #505050;
+ --FixedMainContentHeaderBackground: #0000;
+ --AdvancedElementTabsBorderColor: #121212;
+ --NavPaneBackgroundColor: #121111eb;
+ --DarkGrayTransparentBorderColor: #49494936;
+}
+
+html {
+ cursor: url('https://santakaveli.github.io/Tomatic_Arrow_Dark_S.cur'), default;
+}
+
+body {
+ background: url('https://santakaveli.github.io/bg.gif');
+ background-size: cover;
+ background-color: #000;
+ background-attachment: fixed;
+}
+
+body::before {
+ content: '';
+ position: fixed;
+ inset: 0;
+ backdrop-filter: grayscale(1) blur(3px) brightness(.1);
+ pointer-events: none;
+ z-index: -1;
+}
+
+input[type="text"], input[type="search"], textarea {
+ backdrop-filter: blur(3px);
+}
+
+.ColorPreview,
+.ColorSwatch,
+.ColorLabel,
+.ColorValue,
+.ColorBox,
+.color,
+.highlight,
+.mark {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+input:checked+.Tab, .Tab, .Tab:has(:checked) {
+ border: unset;
+}
+
+.Tabs {
+ border-bottom: unset;
+}
+
+.TabsWrapper {
+ overflow: unset;
+}
+
+.SlideOverlay .Submitter {
+ width: 90px;
+ height: 90px;
+ filter: drop-shadow(0 0 2px  var(--PrimaryNavBackgroundColor));
+}
+
+.ScriptRecord .CodeSnippet {
+ padding: unset;
+ height: 128px;
+}
+
+#MainContentHeader {
+ background: var(--PageNewFooterColor);
+ border: 1px solid var(--DarkGrayTransparentBorderColor);
+}
+
+#PrimaryNav {
+ border-bottom: 2px solid var(--DarkGrayTransparentBorderColor);
+}
+
+#SecondaryNav {
+ border-top: 1px solid var(--DarkGrayTransparentBorderColor);
+}
+
+#SubmitterModule .Content .Avatar {
+ width: 75px;
+ height: 75px;
+ border: 1px solid var(--DarkGrayTransparentBorderColor);
+ filter: blur(.3px);
+}
+
+.RichText img, .RichText iframe, .RichText audio, .RichText video {
+ border: 1px solid var(--DarkGrayTransparentBorderColor);
+}
+
+.ExtendedContentButton {
+ background: #1a2025;
+}
+
+audio {
+ filter: invert(.9);
+}
+
+#SiteLogo img {
+ filter: grayscale(1);
+ -webkit-transition: all 1s ease;
+ -moz-transition: all 1s ease;
+ -o-transition: all 1s ease;
+ -ms-transition: all 1s ease;
+ transition: all 1s ease;
+}
+
+#SiteLogo img:hover {
+ filter: grayscale(0);
+}
+
+#SiteLogo img[width="311"] {
+ content: url('https://sayorisocks.github.io/img/gb.png');
+ image-rendering: unset;
+ width: 291px;
+ height: 36px;
+}
+
+/* Counter-Strike 1.6 */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/6000e846f38b9.jpg"] {
+ content: url('https://santakaveli.github.io/games/cs.jpg');
+ transform: scaleX(-1);
+}
+
+/* Team Fortress 2 */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5a7ddb19ea011.jpg"] {
+ content: url('https://santakaveli.github.io/games/tf2.jpg');
+}
+
+/* Minecraft: Wii U Edition */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/59e4ebe45e23a.jpg"] {
+content: url('https://santakaveli.github.io/games/mcwiiu.jpg');
+}
+
+/* DOOM */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5707d104dfaaf.jpg"] {
+ content: url('https://santakaveli.github.io/games/doom.jpg');
+}
+
+/* Counter-Strike: Source */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5a7df6bc0e50c.jpg"] {
+ content: url('https://santakaveli.github.io/games/css.png');
+}
+
+/* Half-Life 2: Deathmatch */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5a95dec5d4bf1.jpg"] {
+ content: url('https://santakaveli.github.io/games/hl2dm.png');
+}
+
+/* GoldSource Engine */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/6398eca573796.jpg"] {
+ content: url('https://santakaveli.github.io/games/goldsrc.png');
+}
+
+/* Garry's Mod */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5a86f8c6675b7.jpg"] {
+ content: url('https://santakaveli.github.io/games/gmod.jpg');
+}
+
+/* Mario Kart DS */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5b44ded852733.jpg"] {
+ content: url('https://santakaveli.github.io/games/mkds.png');
+}
+
+/* DOOM II */
+#HeadlineBackground[src="https://images.gamebanana.com/img/Webpage/Game/Profile/Background/5a93675539760.jpg"] {
+ content: url('https://santakaveli.github.io/games/doom2.png');
+}
+
+a {
+ cursor: url('https://santakaveli.github.io/Tomatic_Link_Dark_S.cur'), pointer;
+}
+
+button:hover {
+ cursor: url('https://santakaveli.github.io/Tomatic_Link_Dark_S.cur'), pointer;
+}
